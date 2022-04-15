@@ -11,7 +11,7 @@ public class Main {
         public static int scan(){
                 Scanner scanner = new Scanner(System.in); //пока без циклов и проверок на на правильность ввода))
                 System.out.println("Введите первое число"); //приглашаем ввести
-                int num1 = scanner.nextInt();//считываем первое число
+                int num1 = scanner.nextInt(); //считываем первое число
                 System.out.println("Введите второе число");
                 int num2 = scanner.nextInt();
                 System.out.println("Введите третье число");
