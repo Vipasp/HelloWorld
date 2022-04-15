@@ -1,27 +1,26 @@
 package com.company;
-import java.util.Random;
 import java.util.Scanner;
 public class Main {
         public static void main(String[] args) {
-                int compNumber = random();
-                int humNumber = scan();
-                if (humNumber == compNumber) {
-                        System.out.println("Вы выиграли");
-                }else   {
-                        System.out.println("Вы проиграли");
-                }
-        }
+                int sum = scan(); //вызываем метод ввода с клавиатуры
+                System.out.println("Сумма: " + sum);
+                        }
 
-        public static int random() {
-                Random newRandom = new Random();
-                int randoNumber = newRandom.nextInt(10) + 1;
-                return randoNumber;
-        }
+
 
         public static int scan(){
-                System.out.println("Введите число от 1 до 10");
-                Scanner scanner = new Scanner(System.in);
-                int humanNumber = scanner.nextInt();
-                return humanNumber;
+                Scanner scanner = new Scanner(System.in); //без циклов и проверок на на правильность ввода))
+                System.out.println("Введите первое число"); //считываем первое число
+                int num1 = scanner.nextInt();
+                System.out.println("Введите второе число");
+                int num2 = scanner.nextInt();
+                System.out.println("Введите третье число");
+                int num3 = scanner.nextInt();
+               return (summaChisel(num1,num2,num3)); //выносим сложение в отдельный метод
+
         }
+        public static int summaChisel(int num1,int num2, int num3){
+                return (num1+num2+num3); //возвращаем сумму
+        }
+
 }
