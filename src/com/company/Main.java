@@ -9,7 +9,7 @@ public class Main {
 
 
         public static int scan(){
-                Scanner scanner = new Scanner(System.in); //пока без циклов и проверок на на правильность ввода))
+                Scanner scanner = new Scanner(System.in); //пока без циклов и проверок на правильность ввода))
                 System.out.println("Введите первое число"); //приглашаем ввести
                 int num1 = scanner.nextInt(); //считываем первое число
                 System.out.println("Введите второе число");
