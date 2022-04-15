@@ -1,3 +1,4 @@
+//Программа расчета суммы трех чисел
 package com.company;
 import java.util.Scanner;
 public class Main {
