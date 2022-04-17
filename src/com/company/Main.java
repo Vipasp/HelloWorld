@@ -3,25 +3,23 @@ package com.company;
 import java.util.Scanner;
 public class Main {
         public static void main(String[] args) {
-                int sum = scan(); //вызываем метод ввода с клавиатуры
+                int sum = scan();
                 System.out.println("Сумма: " + sum);
                         }
 
 
 
         public static int scan(){
-                Scanner scanner = new Scanner(System.in); //пока без циклов и проверок на правильность ввода))
-                System.out.println("Введите первое число"); //приглашаем ввести
-                int num1 = scanner.nextInt(); //считываем первое число
-                System.out.println("Введите второе число");
-                int num2 = scanner.nextInt();
-                System.out.println("Введите третье число");
-                int num3 = scanner.nextInt();
-               return (summaChisel(num1,num2,num3)); //выносим сложение в отдельный метод
+                int sum=0;
+                for(int i = 1; i < 4; i++){
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Введите число " + i);
+                int num= scanner.nextInt();
+                sum=sum+num;
+                }
+                return sum;
 
         }
-        public static int summaChisel(int num1,int num2, int num3){
-                return (num1+num2+num3); //возвращаем сумму
-        }
+
 
 }
